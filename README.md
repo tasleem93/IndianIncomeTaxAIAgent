@@ -9,11 +9,10 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 
-# Set up environment variables
-Copy the example file and edit values:
-```
+# Set up environment variables by copying the example file and editing the values
+
 cp .env.example .env   # (On Windows PowerShell: Copy-Item .env.example .env)
-```
+
 
 # Ingest ALL supported files under /data (json, txt, md)
 python ingest.py --force
