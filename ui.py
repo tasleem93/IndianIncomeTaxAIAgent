@@ -470,7 +470,7 @@ with st.sidebar:
     # Tax Assessment & Planning
     st.markdown("**📋 Tax Assessment:**")
     
-    if st.button("� Tax Liability Assessment", use_container_width=True):
+    if st.button("💰 Tax Liability Assessment", use_container_width=True):
         prompt = "Calculate my complete tax assessment:\n1. Total taxable income computation\n2. Tax liability under applicable slabs\n3. TDS vs actual tax liability\n4. Refund due or additional tax payable\n5. Advance tax planning for next year\n6. ITR filing guidance and timeline"
         if st.session_state.uploaded_files:
             st.session_state.messages.append({"role": "user", "content": build_message_with_files(prompt, st.session_state.uploaded_files)})
@@ -575,7 +575,7 @@ if not st.session_state.messages:
             st.rerun()
     
     with col2:
-        if st.button("� Investment Guide", use_container_width=True):
+        if st.button("📈 Investment Guide", use_container_width=True):
             question = "Recommend optimal investment strategy based on my profile: tax-saving options, wealth creation, risk allocation, and timeline-based planning."
             full_message = build_message_with_files(question, st.session_state.uploaded_files)
             st.session_state.messages.append({"role": "user", "content": full_message})
