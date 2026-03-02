@@ -1,2 +1,5 @@
 __pycache__/
 *.pyc
+
+test_report.md
+test_results.json
